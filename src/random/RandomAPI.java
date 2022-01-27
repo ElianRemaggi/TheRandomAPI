@@ -15,7 +15,7 @@ public class RandomAPI extends Application{
 		public static void main(String[] args) {
 			try {
 				Component component = new Component();
-				component.getServers().add(Protocol.HTTP,8000); //Puerto en el que se levantara el servicio
+				component.getServers().add(Protocol.HTTP,8002); //Puerto en el que se levantara el servicio
 				component.getDefaultHost().attach(new RandomAPI()); //Levantamos la APLICACION RandomAPI
 				component.start();
 			}catch (Exception e) {

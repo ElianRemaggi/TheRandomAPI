@@ -13,8 +13,14 @@ public class RangeAction implements IAction{
 	}
 	
 	public RangeAction(int min, int max) {
-		this.min = min;
-		this.max = max;
+		if(max>min) {
+			this.min = min;
+			this.max = max;
+		}else {
+			this.min = max;
+			this.max = min;
+		}
+		
 	}
 	
 	
